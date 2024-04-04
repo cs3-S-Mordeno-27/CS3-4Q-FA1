@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta author="Sasha Isabelle A. Mordeno" content="CS3 4Q -FA1">
+  <title>Sign-up form for an educational platform</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url('1094121.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-cntnr {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(229, 207, 175, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .form-label {
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      height: 100px;
+      width: 100%;
+    }
+
+    .form-submit,
+    .form-reset {
+      background-color: #373061;
+      color: white;
+      padding: 14px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-submit:hover,
+    .form-reset:hover {
+      background-color: #759c6f;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-cntnr">
+  <h1>Sign Up Sheet</h1>
+  <form action="action_page.php" method="post">
+    <label for="user-name" class="form-label">Name:</label>
+    <input type="text" id="user-name" name="user-name" class="form-input" required>
+
+    <label for="user-username" class="form-label">Preferred Username:</label>
+    <input type="text" id="user-username" name="user-username" class="form-input" required>
+
+    <label for="user-password" class="form-label">Password:</label>
+    <input type="password" id="user-password" name="user-password" class="form-input" required>
+
+    <label for="confirm-password" class="form-label">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
+
+    <label for="user-email" class="form-label">Email:</label>
+    <input type="email" id="user-email" name="user-email" class="form-input" required>
+
+    <label for="user-address" class="form-label">Address:</label>
+    <input type="text" id="user-address" name="user-address" class="form-input">
+
+    <label for="user-interests" class="form-label">Interests:</label>
+    <textarea id="user-interests" name="user-interests" class="form-textarea"></textarea>
+
+    <input type="submit" value="Submit" class="form-submit">
+    <input type="reset" value="Reset" class="form-reset">
+  </form>
+</div>
+</body>
+</html>
